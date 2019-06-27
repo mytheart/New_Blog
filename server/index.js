@@ -15,6 +15,6 @@ require('./plugins/db')(app)
 require('./routes/admin')(app)
 require('./routes/web')(app)
 
-app.listen(3000, () => {
-  console.log('server running in localhost:3000');
+app.listen(80, () => {
+  console.log('server running in localhost:80');
 });
