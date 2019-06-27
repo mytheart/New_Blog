@@ -112,7 +112,7 @@ export default {
   display: inline-block;
   width: 150px;
   height: 80px;
-  background-image: url("../assets/1277.gif");
+  background-image: url("../../public/imgs/1277.gif");
   background-size: cover;
   margin-right: 50px;
 }
