@@ -35,7 +35,8 @@ export default {
   },
   methods: {
       fetchArticleDetail(){
-          this.$http.get(`/rest/articles/${this.id}`).then(res=>{
+          this.$http.get(`http://localhost:3000/web/api/rest/articles/${this.id}`).then(res=>{
+              console.log(res)
               this.article=res.data
           })
       }

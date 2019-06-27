@@ -71,9 +71,12 @@ const router = new Router({
   ]
 })
 router.beforeEach((to, from, next) => {
+  console.log(to.meta)
   if (!to.meta.isPublic && !localStorage.token) {
+    console.log(1)
     return next('/login')
   }
+  console.log(2)
   next()
 })
 export default router

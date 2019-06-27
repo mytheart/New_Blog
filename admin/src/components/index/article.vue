@@ -30,7 +30,7 @@ export default {
   },
   methods: {
      fetchArticle() {
-      this.$http.get("/rest/articles").then(res => {
+      this.$http.get("http://localhost:3000/web/api/rest/articles").then(res => {
         this.articles = res.data;
       });
     }
