@@ -30,7 +30,6 @@ import ArticleDetail from './components/index/articleDetail.vue'
 Vue.use(Router)
 
 const router = new Router({
-  mode: 'history',
   routes: [
     { path: '/login', name: 'login', component: Login, meta: { isPublic: true } },
     {
